@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y curl
 
 RUN curl https://yoerik.objects.dreamhost.com/dosources.list > /etc/apt/sources.list
 
-RUN apt-get update && apt-get install -y wget build-essential aria2 cmake libhdf5-serial-dev
+RUN apt-get update && apt-get install -y wget build-essential aria2 cmake libhdf5-serial-dev software-properties-common
 
 RUN adduser --disabled-password --gecos '' torch
 
